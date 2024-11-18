@@ -48,4 +48,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation ("org.mariuszgromada.math:MathParser.org-mXparser:5.2.0")
+    implementation ("org.mariuszgromada.math:MathParser.org-mXparser:4.4.2")
 }

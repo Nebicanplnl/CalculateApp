@@ -9,29 +9,31 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:id="@+id/linear_layouts"
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="200dp"
         android:padding="30dp"
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/inputText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="end"
-            android:textSize="30sp"
+            android:textSize="40sp"
             android:textColor="#222222"
             tools:text="5+10-3"/>
 
         <TextView
+            android:id="@+id/resultText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="end"
-            android:textSize="50sp"
+            android:textSize="65sp"
             android:textColor="@color/green"
             tools:text="12"/>
 
@@ -41,7 +43,7 @@
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintTop_toBottomOf="@id/linear_layouts"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -55,7 +57,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/constraintLayout"
             app:layout_constraintEnd_toStartOf="@id/two_button"
-            android:layout_marginStart=""
             />
 
         <androidx.appcompat.widget.AppCompatButton
@@ -129,7 +130,7 @@
             android:id="@+id/x_button"
             android:layout_width="90dp"
             android:layout_height="90dp"
-            android:text="x"
+            android:text="×"
             android:textSize="32sp"
             app:layout_constraintStart_toEndOf="@id/three_button"
             app:layout_constraintTop_toBottomOf="@id/four_button"
@@ -137,35 +138,35 @@
             />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/dört_button"
+            android:id="@+id/dort_button"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:text="4"
             android:textSize="32sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/yedi_button"
-            app:layout_constraintEnd_toStartOf="@id/beş_button"
+            app:layout_constraintEnd_toStartOf="@id/bes_button"
 
             />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/beş_button"
+            android:id="@+id/bes_button"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:text="5"
             android:textSize="32sp"
-            app:layout_constraintStart_toEndOf="@id/dört_button"
-            app:layout_constraintEnd_toStartOf="@id/altı_button"
+            app:layout_constraintStart_toEndOf="@id/dort_button"
+            app:layout_constraintEnd_toStartOf="@id/alti_button"
             app:layout_constraintTop_toBottomOf="@id/sekiz_button"
             />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/altı_button"
+            android:id="@+id/alti_button"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:text="6"
             android:textSize="32sp"
-            app:layout_constraintStart_toEndOf="@id/beş_button"
+            app:layout_constraintStart_toEndOf="@id/bes_button"
             app:layout_constraintTop_toBottomOf="@id/dokuz_button"
             app:layout_constraintEnd_toStartOf="@id/eksi_button"
             />
@@ -176,7 +177,7 @@
             android:layout_height="90dp"
             android:text="-"
             android:textSize="32sp"
-            app:layout_constraintStart_toEndOf="@id/altı_button"
+            app:layout_constraintStart_toEndOf="@id/alti_button"
             app:layout_constraintTop_toBottomOf="@id/x_button"
             app:layout_constraintEnd_toEndOf="parent"
             />
@@ -188,7 +189,7 @@
             android:text="1"
             android:textSize="32sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/dört_button"
+            app:layout_constraintTop_toBottomOf="@id/dort_button"
             app:layout_constraintEnd_toStartOf="@id/iki_button"
 
             />
@@ -200,18 +201,18 @@
             android:text="2"
             android:textSize="32sp"
             app:layout_constraintStart_toEndOf="@id/bir_button"
-            app:layout_constraintEnd_toStartOf="@id/üç_button"
-            app:layout_constraintTop_toBottomOf="@id/beş_button"
+            app:layout_constraintEnd_toStartOf="@id/uc_button"
+            app:layout_constraintTop_toBottomOf="@id/bes_button"
             />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/üç_button"
+            android:id="@+id/uc_button"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:text="3"
             android:textSize="32sp"
-            app:layout_constraintStart_toEndOf="@id/beş_button"
-            app:layout_constraintTop_toBottomOf="@id/altı_button"
+            app:layout_constraintStart_toEndOf="@id/bes_button"
+            app:layout_constraintTop_toBottomOf="@id/alti_button"
             app:layout_constraintEnd_toStartOf="@id/eksi_button"
             />
 
@@ -221,7 +222,7 @@
             android:layout_height="90dp"
             android:text="+"
             android:textSize="32sp"
-            app:layout_constraintStart_toEndOf="@id/altı_button"
+            app:layout_constraintStart_toEndOf="@id/alti_button"
             app:layout_constraintTop_toBottomOf="@id/eksi_button"
             app:layout_constraintEnd_toEndOf="parent"
             />
@@ -234,29 +235,29 @@
             android:textSize="32sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/bir_button"
-            app:layout_constraintEnd_toStartOf="@id/sıfır_button"
+            app:layout_constraintEnd_toStartOf="@id/sifir_button"
 
             />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/sıfır_button"
+            android:id="@+id/sifir_button"
             android:layout_width="90dp"
             android:layout_height="90dp"
             android:text="0"
             android:textSize="32sp"
             app:layout_constraintStart_toEndOf="@id/nokta_button"
-            app:layout_constraintEnd_toStartOf="@id/eşittir_button"
+            app:layout_constraintEnd_toStartOf="@id/esittir_button"
             app:layout_constraintTop_toBottomOf="@id/iki_button"
             />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/eşittir_button"
+            android:id="@+id/esittir_button"
             android:layout_width="190dp"
             android:layout_height="90dp"
             android:text="="
             android:textSize="32sp"
-            app:layout_constraintStart_toEndOf="@id/beş_button"
-            app:layout_constraintTop_toBottomOf="@id/üç_button"
+            app:layout_constraintStart_toEndOf="@id/bes_button"
+            app:layout_constraintTop_toBottomOf="@id/uc_button"
             app:layout_constraintEnd_toEndOf="parent"
             />
 
