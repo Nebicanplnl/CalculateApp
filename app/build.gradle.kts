@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.calculateapp"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.calculateapp"
@@ -32,6 +32,9 @@ android {
     }
     kotlinOptions {
         jvmTarget = "11"
+    }
+    buildFeatures {
+        viewBinding = true
     }
 }
 
